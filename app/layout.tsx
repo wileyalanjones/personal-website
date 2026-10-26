@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: siteConfig.tagline,
     images: [
       {
-        url: "/og-image.png",
+        url: "/banner_image.png",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} — Portfolio`,
@@ -87,8 +87,6 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="min-h-full flex flex-col bg-white dark:bg-stone-950 text-stone-900 dark:text-white">
         {children}

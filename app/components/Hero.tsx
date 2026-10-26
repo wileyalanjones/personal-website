@@ -6,8 +6,8 @@ import { ArrowRightIcon, GithubIcon, LinkedInIcon, EmailIcon, ArrowDownIcon } fr
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-stone-50 via-orange-50/40 to-stone-50 dark:from-stone-950 dark:via-stone-900 dark:to-stone-950" aria-hidden="true" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-200/30 via-transparent to-transparent dark:from-orange-900/20 dark:via-transparent" aria-hidden="true" />
+      <div className="absolute inset-0 bg-linear-to-br from-stone-50 via-orange-50/40 to-stone-50 dark:from-stone-950 dark:via-stone-900 dark:to-stone-950" aria-hidden="true" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-orange-200/30 via-transparent to-transparent dark:from-orange-900/20 dark:via-transparent" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
         <div className="text-center">
@@ -17,7 +17,7 @@ export function Hero() {
           <p className="text-lg sm:text-xl md:text-2xl text-stone-600 dark:text-stone-300 max-w-3xl mx-auto mb-8 leading-relaxed">
             <RotatingText roles={siteConfig.roles} />
           </p>
-          <p className="text-base sm:text-lg text-stone-500 dark:text-stone-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-base sm:tßext-lg text-stone-500 dark:text-stone-400 max-w-2xl mx-auto mb-10 leading-relaxed">
             {siteConfig.tagline}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

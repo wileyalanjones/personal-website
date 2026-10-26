@@ -11,7 +11,7 @@ export const siteConfig = {
 
 export const aboutText = [
   "Hi, I'm Wiley! I worked in Hollywood for almost a decade in Management and Production companies. However, as the streaming revolution swept across the industry, I became more fascinated with technology and its growing impact in all of our lives. In 2024, I enrolled in Oregon State University for Computer Science and fell in love with coding. Machine Learning first grabbed my interest hard, but I have recently have been enamored with traditional software engineering, especially with AI native solutions to old problems.",
-  "When I'm not coding I'm probably at the gym, on the golf course, or playing with my dog charles! There is a hidden link somewhere on the page to a picture of him. See if you can find it!",
+  "When I'm not coding I'm probably at the gym, on the golf course, or playing with my dog Charles! There is a hidden link somewhere on the page to a picture of him. See if you can find it!",
 ];
 
 export const projects = [
@@ -20,7 +20,7 @@ export const projects = [
     title: "Golf Swing Sequencing",
     description: "This is a CNN/LSTM Neural Network Project that can take in a video of a golf swing and return the frames that correspond to the eight sequences of the swing",
     tech: ["Python", "Tensorflow", "Machine Learning", "CNN/LSTM", "OpenCV"],
-    githubUrl: "https://github.com/yourusername/project-one",
+    githubUrl: "https://github.com/wileyalanjones/GolfSwingSequencing",
     liveUrl: "https://project-one.example.com",
     videoId: "uc4Q1MGml6Y",
     featured: true,
@@ -28,7 +28,7 @@ export const projects = [
   {
     id: 2,
     title: "Music Genre Classifier",
-    description: "Musis Genre Classification application. Able to classify any music clip into one of 10 genres. My role was architecting and training the model for the application",
+    description: "Music Genre Classification application. Able to classify any music clip into one of 10 genres. My role was architecting and training the model for the application",
     tech: ["Python", "Tensorflow", "Machine Learning", "CNN"],
     githubUrl: "https://github.com/hutsonjo/CNN_Music_Classifier",
     featured: true,
@@ -36,7 +36,7 @@ export const projects = [
   {
     id: 3,
     title: "Golf Tracker",
-    description: "Wesbite for people to track their golf rounds, courses, clubs, stats, and more.",
+    description: "Website for people to track their golf rounds, courses, clubs, stats, and more.",
     tech: ["Javascript", "MERN", "Node.js", "MongoDB", "React.js"],
     githubUrl: "https://github.com/wileyalanjones/Golf_Tracker",
     featured: false,
