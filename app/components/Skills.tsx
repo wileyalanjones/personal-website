@@ -10,7 +10,7 @@ const skillCategories = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 sm:py-28 bg-white dark:bg-stone-950">
+    <section id="skills" className="py-20 sm:py-28 bg-stone-50 dark:bg-stone-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -30,7 +30,7 @@ export function Skills() {
               <Reveal key={category.key} delay={i*0.1} className="h-full">
                 <div
                   key={category.key}
-                  className="bg-stone-50 dark:bg-stone-800/50 rounded-xl border border-stone-200 dark:border-stone-700 p-6 h-full"
+                  className="bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 p-6 h-full"
                 >
                   <h3 className="text-lg font-semibold text-stone-900 dark:text-white mb-4 flex items-center gap-2">
                     {category.label}

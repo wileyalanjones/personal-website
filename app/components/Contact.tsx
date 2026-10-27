@@ -4,7 +4,7 @@ import { EmailIcon, GithubIcon, LinkedInIcon } from "@/app/components/Icons";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 sm:py-28 bg-white dark:bg-stone-950">
+    <section id="contact" className="py-20 sm:py-28 bg-stone-50 dark:bg-stone-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">

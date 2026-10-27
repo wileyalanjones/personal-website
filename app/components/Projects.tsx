@@ -6,7 +6,7 @@ import { GithubIcon, ExternalLinkIcon } from "@/app/components/Icons";
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 sm:py-28 bg-stone-50 dark:bg-stone-900">
+    <section id="projects" className="py-20 sm:py-28 bg-white dark:bg-stone-950">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -23,7 +23,7 @@ export function Projects() {
             <Reveal key={project.id} delay={i*0.1}>
               <article
                 key={project.id}
-                className="group bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 p-6 hover:shadow-lg hover:border-accent dark:hover:border-accent transition-all duration-300 flex flex-col h-full"
+                className="group bg-stone-50 dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 p-6 hover:shadow-lg hover:border-accent dark:hover:border-accent transition-all duration-300 flex flex-col h-full"
               >
                 <div className="flex flex-col flex-1">
   <h3 className="text-xl font-semibold text-stone-900 dark:text-white mb-3 group-hover:text-accent dark:group-hover:text-accent transition-colors">
