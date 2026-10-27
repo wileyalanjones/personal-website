@@ -14,6 +14,24 @@ export const aboutText = [
   "When I'm not coding I'm probably at the gym, on the golf course, or playing with my dog Charles! There is a hidden link somewhere on the page to a picture of him. See if you can find it!",
 ];
 
+export const experience = [
+  {
+    id: 1,
+    title: "Software Engineer Intern - Generative AI",
+    company: "Anheuser-Busch",
+    location: "St. Louis, Missouri",
+    startDate: "June 2026",
+    endDate: "August 2026",
+    description: "I worked with the social media team to create AI workflows that automated brand responses to low-priority, positive sentiment comments",
+    highlights: [
+      "Built entire Social Media response agent",
+      "AI generated responses scored significantly higher than human written responses in blind A/B test",
+      "Increased brand reply rate by 10x"
+    ],
+    tech: ["Python", "SQL", "Open AI API and SDK", "Databricks", "Docker", "Azure"]
+    }
+]
+
 export const projects = [
   {
     id: 1,
