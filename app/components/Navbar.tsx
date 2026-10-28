@@ -6,7 +6,7 @@ import { siteConfig } from "@/app/content";
 import { CloseIcon, MenuIcon } from "@/app/components/Icons";
 
 const navLinks = [
-  { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience"},
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#resume", label: "Resume" },

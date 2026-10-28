@@ -2,6 +2,7 @@ import Link from "next/link";
 import { projects } from "@/app/content";
 import { VideoModal } from "@/app/components/VideoModal";
 import { Reveal } from "@/app/components/Reveal"
+import { TiltCard } from "@/app/components/TiltCard";
 import { GithubIcon, ExternalLinkIcon } from "@/app/components/Icons";
 
 export function Projects() {
@@ -21,6 +22,7 @@ export function Projects() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, i) => (
             <Reveal key={project.id} delay={i*0.1}>
+              <TiltCard className="h-full">
               <article
                 key={project.id}
                 className="group bg-stone-50 dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 p-6 hover:shadow-lg hover:border-accent dark:hover:border-accent transition-all duration-300 flex flex-col h-full"
@@ -71,6 +73,7 @@ export function Projects() {
                   )}
                 </div>
               </article>
+              </TiltCard>
             </Reveal>
           ))}
         </div>

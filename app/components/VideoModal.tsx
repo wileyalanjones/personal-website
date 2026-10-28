@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import { createPortal } from "react-dom";
 import { PlayIcon, CloseIcon } from "@/app/components/Icons";
 
 export function VideoModal({ videoId }: { videoId: string }) {
@@ -25,7 +26,7 @@ export function VideoModal({ videoId }: { videoId: string }) {
                 <PlayIcon className="h-4 w-4" />
                 Watch Demo
             </button>
-            {open && (
+            {open && createPortal(
                 <div
                 className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
                 onClick={() => setOpen(false)}
@@ -52,7 +53,8 @@ export function VideoModal({ videoId }: { videoId: string }) {
                     />
                     </div>
                 </div>
-                </div>
+                </div>,
+                document.body
             )}
         </>
     )

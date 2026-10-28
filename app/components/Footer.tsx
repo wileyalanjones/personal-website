@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/app/content";
+import { ImageModal } from "@/app/components/ImageModal"
 import { GithubIcon, LinkedInIcon, EmailIcon } from "@/app/components/Icons";
 
 export function Footer() {
@@ -15,8 +16,10 @@ export function Footer() {
             </h3>
             <p className="text-stone-600 dark:text-stone-400 text-sm leading-relaxed">
               Building thoughtful software that solves real problems.
-              Always learning, always growing.
-            </p>
+              Always learning, always growing, {" "}
+              <ImageModal />
+              🐾.
+            </p> 
           </div>
 
           <nav aria-label="Footer navigation">
@@ -24,11 +27,6 @@ export function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="#about" className="text-stone-600 dark:text-stone-400 hover:text-accent dark:hover:text-accent text-sm transition-colors">
-                  About
-                </Link>
-              </li>
               <li>
                 <Link href="#projects" className="text-stone-600 dark:text-stone-400 hover:text-accent dark:hover:text-accent text-sm transition-colors">
                   Projects
@@ -99,6 +97,18 @@ export function Footer() {
           <p className="text-center text-stone-500 dark:text-stone-500 text-sm">
             &copy; {currentYear} {siteConfig.name}. Built with Next.js and Tailwind CSS.
           </p>
+          <div className="mt-2 text-center">
+            <a
+              href="/charles.jpeg"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="You found Charles! 🐾"
+              aria-label="A hidden picture of Charles the dog"
+              className="inline-block text-lg opacity-20 hover:opacity-100 transition-opacity"
+            >
+              🐾
+            </a>
+          </div>
         </div>
       </div>
     </footer>

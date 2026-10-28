@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://wileyjones.vercel.app"),
   title: {
     default: `${siteConfig.name} — ${siteConfig.title}`,
     template: `%s | ${siteConfig.name}`,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourdomain.com",
+    url: "https://wileyjones.vercel.app",
     siteName: siteConfig.name,
     title: `${siteConfig.name} — ${siteConfig.title}`,
     description: siteConfig.tagline,
@@ -57,10 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.title}`,
     description: siteConfig.tagline,
-    images: ["/og-image.png"],
-  },
-  verification: {
-    google: "your-google-site-verification-code",
+    images: ["/banner_image.png"],
   },
 };
 

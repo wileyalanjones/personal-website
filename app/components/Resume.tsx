@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { resume, siteConfig } from "@/app/content";
 import { Reveal } from "@/app/components/Reveal"
-import { DownloadIcon } from "@/app/components/Icons";
+import { ExternalLinkIcon } from "@/app/components/Icons";
 
 export function Resume() {
   return (
@@ -18,16 +18,13 @@ export function Resume() {
 
               <Link
                 href={siteConfig.resumePath}
-                download={resume.fileName}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-8 py-4 text-base font-medium text-white hover:bg-accent-soft transition-colors"
               >
-                <DownloadIcon className="h-5 w-5" />
-                Download Resume (PDF)
+                <ExternalLinkIcon className="h-5 w-5" />
+                View Resume
               </Link>
-
-              <p className="mt-4 text-sm text-stone-500 dark:text-stone-400">
-                Or view it directly in your browser by clicking the link above.
-              </p>
             </div>
           </Reveal>
         </div>

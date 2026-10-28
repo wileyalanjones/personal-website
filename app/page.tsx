@@ -1,7 +1,6 @@
 import { Navbar } from "@/app/components/Navbar";
 import { Hero } from "@/app/components/Hero";
 import { Experience } from "@/app/components/Experience"
-import { About } from "@/app/components/About";
 import { Projects } from "@/app/components/Projects";
 import { Skills } from "@/app/components/Skills";
 import { Resume } from "@/app/components/Resume";
@@ -14,7 +13,6 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <About />
         <Experience />
         <Projects />
         <Skills />
